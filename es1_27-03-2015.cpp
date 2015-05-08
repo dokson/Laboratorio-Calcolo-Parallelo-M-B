@@ -30,7 +30,7 @@ int main()
 	
 	// Generazione vettore
 	cout << "Genero il vettore A e lo stampo:\n";
-	for(int i = 0 ; i < N; i++) 
+	for(int i = 0; i < N; i++) 
 		A[i] = vectorDistribution(generator);
 	stampaVettore(A);
 	
@@ -47,7 +47,7 @@ int main()
 	float B[N];
 	// Generazione vettore
 	cout << "Genero il vettore B e lo stampo:\n";
-	for(int i = 0 ; i < N; i++) 
+	for(int i = 0; i < N; i++) 
 		B[i] = vectorDistribution(generator);
 	stampaVettore(B);
 	
@@ -67,14 +67,14 @@ int main()
 // Stampa il vettore
 void stampaVettore(float V[N])
 {
-	for(int i = 0 ; i < N; i++) 
+	for(int i = 0; i < N; i++) 
 		cout << "Elemento " << i+1 << " = " << V[i] << "\n";
 }
 
 // Esegue prodotto scalare del vettore
 void prodottoScalare(float vettore[N], int scalare)
 {
-	for(int i = 0 ; i < N; i++) 
+	for(int i = 0; i < N; i++) 
 		vettore[i] *= scalare;
 }
 
@@ -84,7 +84,7 @@ float modulo(float V[N])
 	float result = 0;
 	
 	// Eleva alla seconda tutti i valori del vettore e sommali
-	for(int i = 0 ; i < N; i++) 
+	for(int i = 0; i < N; i++) 
 		result += pow(V[i], 2);
 	
 	// Metti tutto sotto radice e restituiscilo
@@ -96,7 +96,7 @@ float modulo(float V[N])
 float prodottoScalare(float V1[N], float V2[N])
 {
 	float result = 0;
-	for(int i = 0 ; i < N; i++) 
+	for(int i = 0; i < N; i++) 
 		result += V1[i]*V2[i];
 	return result;
 }
@@ -112,6 +112,6 @@ void scambiaElemento (float& a, float& b)
 // Scambia due vettori di float di dimensione N
 void scambiaVettori(float V1[N], float V2[N])
 {
-	for(int i = 0 ; i < N; i++) 
+	for(int i = 0; i < N; i++) 
 		scambiaElemento(V1[i], V2[i]);
 }
